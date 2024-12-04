@@ -53,14 +53,14 @@ ingress:
     kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
   hosts:
-    - host: nginx-argocd.devnerd.store
+    - host: nginx-argocd.leangbunal.site
       paths:
         - path: /
           pathType: Prefix
   tls:
    - secretName: nginx-argocd-chart-tls
      hosts:
-       - nginx-argocd.devnerd.store
+       - nginx-argocd.leangbunal.site
 
 resources: {}
   # We usually recommend not to specify default resources and to leave this as a conscious
